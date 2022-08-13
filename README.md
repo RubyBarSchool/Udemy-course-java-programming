@@ -10,3 +10,10 @@ Step 4: In tab System variable find variable Path and click edit
 Step 5: Add new value is path go to folder have java in disk C (Example: C:\Program Files\Java\jdk-16.0.1)
 Step 6: Open CMD typing java --version if CMD show version of java is succcessfull
 ```
+
+### JDK and JRE and JVM
+``` bash
+JVM (Java Virtual Machine) runs Java bytecode
+JRE = JVM + Libraries + Other Components
+JDK = JRE + Compilers + Debuggers
+```
