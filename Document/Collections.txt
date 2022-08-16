@@ -1,0 +1,30 @@
+Collections
+List: ArrayList, Vector, LinkedList
+
+ArrayList và Vector giống nhau hoàn toàn từ structure đến thao tác đọc ghi dữ liệu
+Khác ArrayList không hỗ trợ đa luồng còn Vector thì có
+
+LinkedList khác ArrayList và Vector ở structure (Ghi nối tiếp thằng trước nối thằng sau) 
+Hơn ArrayList ở việc update, thêm, sửa, xóa
+nhưng thua việc đọc vì ArrayList muốn xóa phần tử thì nó phải dồn hết phần tử phía sau lên trước
+performance không tốt
+
+Set: HashSet, LinkedSet, TreeSet (Khác List ko lưu trùng value)
+
+HashSet : Lưu theo Hasing structure /13 => lưu không có thứ tự
+LinkedHashSet: lưu theo thứ tự đầu vào
+TreeSet: Lưu tự động sắp xếp tăng dần theo thuật toán tree ( trái bé, phải to )
+
+Queue: PriorityQueue (Tụ động sort khi app) ( taho tác dữ liệu LIFO)
+Nếu muốn custom sắp xếp tạo một class implement Comparator sau đó custom hàm
+Khi khai báo class PriorityQueue thì thêm class làm tham số
+
+Map(Key,Value - Key không được trùng) HashMap, HashTable, LinkedHashMap, TreeMap
+
+HashMap,HashTable Giống nhau vè mọi thứ tương tự như ArrayList và Vector
+HashMap không hỗ trợ đa luồng HashTable thì có
+khác 1 thứ là key của HashMap co thể null nhưng Key HashTable bắt buộc khác null
+
+LinkedHashMap thì lưu data theo thứ tự input
+
+TreeMap sắp xếp tăng dần của Key
