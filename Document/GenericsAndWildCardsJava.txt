@@ -5,3 +5,5 @@ Generics:
 Wildcards
 - Collections<?>
 - Collections<? extends Object>
+
+- Collections<? super Object>
