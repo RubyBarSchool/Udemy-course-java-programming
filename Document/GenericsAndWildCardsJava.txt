@@ -1,0 +1,7 @@
+Generics:
+- Class <T>
+- Class <T extends Object>
+
+Wildcards
+- Collections<?>
+- Collections<? extends Object>
