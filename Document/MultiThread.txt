@@ -1,0 +1,60 @@
+// NEW;
+// RUNNABLE;
+// RUNNING;
+// BLOCKED/WAITING;
+// TERMINATED/DEAD;
+// MAX_PRIORITY = 10;
+// NORM_PRIORITY = 5;
+// MIN_PRIORITY = 1;
+
+
+
+Class Task extends Thread{
+	@Override
+    public void run() {
+        System.out.println("Task 1 kick off");
+        for(int i = 100 ; i < 200 ; i++){
+            System.out.print(i+" ");
+        }
+        System.out.println("Task 1 done");
+    }
+}
+
+class Task2 implements Runnable{
+    @Override
+    public void run() {
+        System.out.println("Task 2 kick off");
+        for(int i = 200 ; i < 300 ; i++){
+            System.out.print(i+" ");
+        }
+        System.out.println("Task 2 done");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) throws InterruptedException {
+        Task1 task1 = new Task1(); // 	NEW Thread 1
+        task1.start(); // RUNNING Thread 1
+		task1.setPriority(Thread.MAX_PRIORITY);
+		task1.join();// other thread can run if task1 die
+		Thread.sleep(1000); //  Thread sleep 1000 millis
+		Task2 task2 = new Task2(); 
+        Thread thread = new Thread(task2); // 	NEW Thread 2 
+        thread.start(); // RUNNING Thread 2 , 
+		// when task2 running task1 is runable
+		// when task1 running task2 is runable
+		// when for loop 100 => TERMINATED/DEAD Thread 1
+		// when for loop 100 => TERMINATED/DEAD Thread 2
+		
+		
+		// if in task1 want output other thread show task1 is BLOCKED/WAITING
+		ExecutorService executorService = Executors.newSingleThreadExecutor();
+										  Executors.newFixedThreadPool(2); // config number thread can run only time
+		executorService.execute(new Task1());
+		executorService.execute(new Thread(new Task2()));
+		// service controll single thread run if task1 done task2 can run
+		executorService.shutdown();
+		// after logic should shutdown
+		
+    }
+}
