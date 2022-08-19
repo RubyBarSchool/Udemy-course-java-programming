@@ -1,0 +1,11 @@
+Access Modifiers:
+- Class: Public and default
+Public: Có thể gọi và sử dụng ở mọi nơi
+Default: Chỉ có thể dùng ở các class nằm chung một package
+
+- Method:
+Public: Có thể gọi và sử dụng ở mọi nơi
+Protected: Có thể gọi và dùng ở các class trong cùng 1 package. Nếu gọi và dùng ở các class ngoài package
+thì phải là class con.
+Default: Chỉ gọi và dùng ở các class nằm trong cùng 1 package.
+Private: Chỉ dùng trong class không gọi và dùng được ở ngoài class
