@@ -1,0 +1,8 @@
+Static
+
+Variable: Biến được khai báo là static thì nó thuộc về lớp chứ không phải là thể hiện của lớp
+Nó được khởi tạo một lần suy nhất trong lần khởi tạo lớp đầu tiên từ đó về sau là các thể hiện khác
+sẽ dùng chung biến đó.
+
+Method: hàm được khai báo là static thì sẽ được gọi trực tiếp từ class chứ không cần gọi thông
+qua một thể hiện của lớp. Hàm khai báo là static thì không gọi được các hàm, biến không phải là static
