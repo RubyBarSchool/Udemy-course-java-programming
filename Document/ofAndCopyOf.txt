@@ -1,0 +1,3 @@
+List, Set, Map -- of, copyOf method
+
+Khi một thể hiện được dùng bằng of hay copyOf thì đối tượng không được update giá trị( giá trị được bảo toàn)
