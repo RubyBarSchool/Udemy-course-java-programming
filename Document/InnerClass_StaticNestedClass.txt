@@ -1,0 +1,6 @@
+Inner class vs Static nested Class
+
+
+Class inner chỉ khởi tạo được thông qua class chứa
+
+Static nested class có thể tạo độc lập không cần thông qua class chứa
