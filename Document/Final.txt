@@ -1,0 +1,10 @@
+Final:
+
+Class: Nếu class được khai báo là final thì class đó không cho phép class khác kế thừa.
+Method: Nếu method được khai báo là final thì các class con không được ghi đè được method đó.
+Variable: Nếu biến được khai báo là final thì biến đó sẽ không đưucọ phép thay đổi giá trị nữa.
+Nếu biến đó khi khai báo không được gán giá trị nào thì biến được phép thay đổi giá trị 1 lần.
+final int i;
+i = 10;
+i=11;(Lỗi tại compile)
+Argument(Tham số): Không được phép thay đổi giá trị
