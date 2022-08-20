@@ -1,0 +1,8 @@
+String Utility(Java 11,12)
+
+.isBlank(): Check chuỗi có rỗng không(chuỗi rỗng và chứa toan fbooj kí tự khoảng trắng)
+.strip: remove all khoảng trắng 2 đầu của chuỗi
+.stripLeading: remove all khoảng trắng phía bên trái chuỗi
+.stripTrailing: remove all khoảng trắng phía bên phải chuỗi
+.transform: Áp dụng một hàm cho chuỗi 
+.formatted: chuyền vào chuỗi tham số theo quy tắc
