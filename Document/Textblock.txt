@@ -1,0 +1,10 @@
+Text Block: (JDK 15)
+
+String preview = """
+	"hello"
+this 	
+		is demo text 		""";
+		
+Rule: Ba dấu nháy kép luôn luôn phải đứng một mình để không bị nhầm lẫn là khai báo string bình
+thường. khi khai báo trong text block thì cấu trúc define như nào thì sẽ được hiển thị như thế
+cả xuống dòng hay khoảng cách.
